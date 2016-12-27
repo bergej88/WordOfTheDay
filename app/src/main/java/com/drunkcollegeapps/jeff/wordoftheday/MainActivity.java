@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         String[] tempWords = {"Pith", "Obstreperous", "Acrimonious", "Mercurial", "Defenestration"
                 , "Bifurcate"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.word_tile, R.id.tvWord,
                 tempWords);
 
         ListView theListView = (ListView) findViewById(R.id.lvWordFeed);
