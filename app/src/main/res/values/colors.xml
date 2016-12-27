@@ -45,4 +45,31 @@
     <color name="red800">#C62828</color>
     <color name="red900">#B71C1C</color>
 
+    <!--======================================
+                   Indigo Palette
+    =======================================-->
+    <color name="indigo50">#E8EAF6</color>
+    <color name="indigo100">#C5CAE9</color>
+    <color name="indigo200">#9FA8DA</color>
+    <color name="indigo300">#7986CB</color>
+    <color name="indigo400">#5C6BC0</color>
+    <color name="indigo500">#3F51B5</color> <!-- Root Color -->
+    <color name="indigo600">#3949AB</color>
+    <color name="indigo700">#303F9F</color>
+    <color name="indigo800">#283593</color>
+    <color name="indigo900">#1A237E</color>
+
+    <!--======================================
+                   Blue Palette
+    =======================================-->
+    <color name="blue50">#E3F2FD</color>
+    <color name="blue100">#BBDEFB</color>
+    <color name="blue200">#90CAF9</color>
+    <color name="blue300">#64B5F6</color>
+    <color name="blue400">#42A5F5</color>
+    <color name="blue500">#2196F3</color> <!-- Root Color -->
+    <color name="blue600">#1E88E5</color>
+    <color name="blue700">#1976D2</color>
+    <color name="blue800">#1565C0</color>
+    <color name="blue900">#0D47A1</color>
 </resources>

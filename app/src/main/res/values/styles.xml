@@ -33,7 +33,8 @@
         <item name="android:maxLines">5</item>
         <item name="android:padding">4dp</item>
         <item name="android:scrollbars">vertical</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blue600</item>
     </style>
 
     <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
@@ -44,6 +45,7 @@
     <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
         <item name="android:gravity">center</item>
         <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/blue800</item>
     </style>
 
 </resources>
