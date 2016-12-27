@@ -3,4 +3,46 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--
+        Material Color Swatches:
+        https://material.io/guidelines/style/color.html#color-color-palette
+
+        Naming Convention:
+        A combination of the main color and the strength of the shade (0 - 900). So a very light
+        color with a strength of 50 would be color50.
+
+        Root Colors:
+        The root color of the pallete is the 500 level shade. Everything less than 500 is lighter,
+        and larger than 500 is darker.
+    -->
+
+    <!--======================================
+                Orange Palette
+    =======================================-->
+    <color name="orange50">#FFF3E0</color>
+    <color name="orange100">#FFE0B2</color>
+    <color name="orange200">#FFCC80</color>
+    <color name="orange300">#FFB74D</color>
+    <color name="orange400">#FFA726</color>
+    <color name="orange500">#FF9800</color> <!-- Root Color -->
+    <color name="orange600">#FB8C00</color>
+    <color name="orange700">#F57C00</color>
+    <color name="orange800">#EF6C00</color>
+    <color name="orange900">#E65100</color>
+
+    <!--======================================
+                   Red Palette
+    =======================================-->
+    <color name="red50">#FFEBEE</color>
+    <color name="red100">#FFCDD2</color>
+    <color name="red200">#EF9A9A</color>
+    <color name="red300">#E57373</color>
+    <color name="red400">#EF5350</color>
+    <color name="red500">#F44336</color> <!-- Root Color -->
+    <color name="red600">#E53935</color>
+    <color name="red700">#D32F2F</color>
+    <color name="red800">#C62828</color>
+    <color name="red900">#B71C1C</color>
+
 </resources>
