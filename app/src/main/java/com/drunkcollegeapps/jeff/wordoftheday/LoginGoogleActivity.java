@@ -82,17 +82,20 @@ public class LoginGoogleActivity extends AppCompatActivity implements GoogleApiC
         mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
 
-        // [START auth_state_listener]
+        // -- AuthStateListener -- //
+        // This runs in a background thread, listening for state changes to the authentication
+        // In order to switch intents, use the listener to check states
+        // https://firebase.google.com/docs/reference/android/com/google/firebase/auth/FirebaseAuth.AuthStateListener
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    Toast.makeText(getBaseContext(), "signed in", Toast.LENGTH_SHORT).show();
                 } else {
                     // User is signed out
-                    Log.d(TAG, "onAuthStateChanged:signed_out");
+                    Toast.makeText(getBaseContext(), "signed out", Toast.LENGTH_SHORT).show();
                 }
                 // [START_EXCLUDE]
                 updateUI(user);
