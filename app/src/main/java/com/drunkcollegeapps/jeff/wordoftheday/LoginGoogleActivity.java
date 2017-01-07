@@ -92,6 +92,11 @@ public class LoginGoogleActivity extends AppCompatActivity implements GoogleApiC
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
+
+                    Intent intent = new Intent(LoginGoogleActivity.this, TestLandingActivity.class);
+
+                    startActivity(intent);
+
                     Toast.makeText(getBaseContext(), "signed in", Toast.LENGTH_SHORT).show();
                 } else {
                     // User is signed out
