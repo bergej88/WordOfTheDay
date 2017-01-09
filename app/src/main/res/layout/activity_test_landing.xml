@@ -10,4 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.drunkcollegeapps.jeff.wordoftheday.TestLandingActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTest"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="15dp"/>
+
 </RelativeLayout>
