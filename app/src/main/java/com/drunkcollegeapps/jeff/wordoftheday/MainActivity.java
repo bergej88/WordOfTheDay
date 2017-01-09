@@ -41,9 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, TestLandingActivity.class);
 
-                String temp = String.valueOf(adapterView.getItemAtPosition(i));
-
-                intent.putExtra("word", temp);
+                intent.putExtra("word", String.valueOf(adapterView.getItemAtPosition(i)));
 
                 startActivity(intent);
 
