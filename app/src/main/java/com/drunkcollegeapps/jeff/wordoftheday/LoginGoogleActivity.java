@@ -93,7 +93,7 @@ public class LoginGoogleActivity extends AppCompatActivity implements GoogleApiC
                 if (user != null) {
                     // User is signed in
 
-                    Intent intent = new Intent(LoginGoogleActivity.this, TestLandingActivity.class);
+                    Intent intent = new Intent(LoginGoogleActivity.this, MainActivity.class);
 
                     startActivity(intent);
 

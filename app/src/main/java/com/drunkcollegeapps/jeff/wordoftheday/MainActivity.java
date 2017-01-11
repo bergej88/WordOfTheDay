@@ -1,5 +1,6 @@
 package com.drunkcollegeapps.jeff.wordoftheday;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -34,11 +35,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                String word = "You selected " +
+                //String word = "You selected " +
+                //String.valueOf(adapterView.getItemAtPosition(i));
+                //Toast.makeText(MainActivity.this, word, Toast.LENGTH_SHORT).show();
 
-                String.valueOf(adapterView.getItemAtPosition(i));
+                Intent intent = new Intent(MainActivity.this, TestLandingActivity.class);
 
-                Toast.makeText(MainActivity.this, word, Toast.LENGTH_SHORT).show();
+                intent.putExtra("word", String.valueOf(adapterView.getItemAtPosition(i)));
+
+                startActivity(intent);
 
             }
         });
