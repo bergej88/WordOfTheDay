@@ -5,6 +5,7 @@ import android.text.TextUtils;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * IMPORTANT:
@@ -15,12 +16,14 @@ public class WOTDApplication extends Application {
     public static final String TAG = WOTDApplication.class.getSimpleName();
     private RequestQueue mRequestQueue;
 
+    public FirebaseAuth mAuth;
     private static WOTDApplication mInstance;
 
     @Override
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+        mAuth = FirebaseAuth.getInstance();
     }
 
     public static synchronized WOTDApplication getInstance() {
@@ -41,7 +44,7 @@ public class WOTDApplication extends Application {
         getRequestQueue().add(req);
     }
 
-    // Put the request into the queue associated to the CCApplication Tag
+    // Put the request into the queue associated to the WOTDApplication Tag
     public <T> void addToRequestQueue(Request<T> req) {
         req.setTag(TAG);
         getRequestQueue().add(req);
