@@ -42,6 +42,9 @@ public class TestLandingActivity extends AppCompatActivity {
                 String.valueOf(newString);
         Toast.makeText(TestLandingActivity.this, word, Toast.LENGTH_LONG).show();
 
+        TextView textViewToChange = (TextView) findViewById(R.id.tvInspectedWord);
+        textViewToChange.setText(newString);
+
 
         // -- Initialize Views -- //
         tvTest = (TextView) findViewById(R.id.tvTestInfo);

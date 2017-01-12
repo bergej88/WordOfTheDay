@@ -17,5 +17,6 @@
     <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
     <string name="firebase_status_fmt">Firebase User: %s</string>
     <string name="firebase_user_management">Firebase User Management</string>
+    <string name="inspectedWord">word</string>
 
 </resources>
